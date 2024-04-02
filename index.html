@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
+
+
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="spotify.css">
+    <link rel="stylesheet" href="utility.css">
+    <script src="spotify.js"></script>
+</head>
+
+<body>
+    <div class="container flex bg-black">
+        <div class="left ">
+            <div class="close">
+                <img width="30" class="invert" src="close.svg" alt="">
+            </div>
+
+            <div class="home bg-grey  m-1 rounded p-1">
+                <div class="logo"><img width="110" class="invert" src="logo.svg" alt="image"></div>
+
+                <ul>
+                    <li><img class="invert" src="home.svg" alt="home"> Home</li>
+                    <li> <img class="invert" src="search.svg" alt="search"> Search <input type="text" class="sch"
+                            placeholder="Search"></li>
+
+
+
+                </ul>
+            </div>
+            <!-- library -->
+            <div class="library bg-black bg-grey rounded m-1 p-1">
+                <div class="heading">
+                    <img class="invert" src="library.svg" alt="">
+                    <h2>
+                        Your Library
+                    </h2>
+                </div>
+                <div class="songList">
+                    <ul>
+                        <button class="plts">Playlists</button>
+
+                    </ul>
+                    
+                </div>
+                <div class="footer">
+                    <div><a href="#"><span>Legal</span> </a></div>
+                    <div><a href="#"><span>Privacy Center</span> </a></div>
+                    <div><a href="#"><span>Privacy Policy</span> </a>
+                    </div>
+                    <div><a href="#"><span>Cookies</span> </a></div>
+                    <div><a href="#"><span>About Ads</span> </a></div>
+                    <div><a href="#"> <span>Accesibility</span></a></div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- right decoration -->
+
+        <div class="right  bg-grey rounded ">
+            <div class="header">
+                <div class="nav">
+                    <div class="hamburgericon">
+
+                        <img width="40" class="invert hamburger" src="hamburger.svg" alt="">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M15 6C15 6 9.00001 10.4189 9 12C8.99999 13.5812 15 18 15 18" stroke="#ffffff"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M9.00005 6C9.00005 6 15 10.4189 15 12C15 13.5812 9 18 9 18" stroke="#ffffff"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+
+
+                    <!-- making the boxex card -->
+                </div>
+                <div class="button">
+                    <button class="signupbtn">Sign Up</button>
+                    <button class="loginbtn">Login</button>
+                </div>
+            </div>
+
+
+            <!-- playlist start -->
+            <div class="spotifyplaylists ">
+                <h1>spotify Playlists</h1>
+
+                <div class="cardcontainer">
+                    <div class="card ">
+
+                        <div class="play">
+
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 20V4L19 12L5 20Z" stroke="#141B34" fill="#000" stroke-width="1.5"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <img src="https://c.saavncdn.com/195/MP3-Hindi-2016-500x500.jpg">
+                        <h2>Happy Hits!</h2>
+                        <p>Hits ro boost your mood and fill you with happiness</p>
+                    </div>
+
+
+
+
+                    <div class="card ">
+
+                        <div class="play">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 20V4L19 12L5 20Z" stroke="#141B34" fill="#000" stroke-width="1.5"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <img src="https://i.scdn.co/image/ab67706f00000002b55b6074da1d43715fc16d6d  " alt="">
+                        <h2>Happy Hits!</h2>
+                        <p>Hits ro boost your mood and fill you with happiness</p>
+                    </div>
+                    <div class="card ">
+                        <div class="play">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 20V4L19 12L5 20Z" stroke="#141B34" fill="#000" stroke-width="1.5"
+                                    stroke-linejoin="round" />
+                            </svg>
+
+
+                        </div>
+                        <img src="https://c.saavncdn.com/195/MP3-Hindi-2016-500x500.jpg " alt="">
+                        <h2>Happy Songs!</h2>
+                        <p>Hits ro boost your mood and fill you with happiness</p>
+                    </div>
+
+
+                    <div class="card ">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQI2SulhmJ4cO16ZBRLb9yqVVnIuICuVezcgA&s " alt="">
+                        <h2>Dancing Song</h2>
+                        <p>Boosting your spirits and saturating you with joy.</p>
+                    </div>
+
+
+
+
+
+                </div>
+                <div class="playbar">
+                    <div class="seekbar">
+                        <div class="circle">
+
+                        </div>
+                    </div>
+                    <div class="player">
+                        <div class="abovebar">
+                            
+                        </div>
+                        <div class="songbtn">
+                            <img id="previous" src="previoussong.svg" alt="">
+                            <img id="play" src="./img/play.svg" alt="">
+                            <img id="next" src="nextsong.svg" alt="">
+                        </div>
+
+
+
+                        <div class="songtime">
+                            00:00 - 10:34
+                            <input id="volcontrol" class="volseek" type="range" name="volume">
+                            <img src="volume.svg" alt="">
+                        </div>
+                        <!-- <div class="time">
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+</body>
+
+</html>

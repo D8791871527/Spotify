@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;600;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ysabeau+Office:wght@700&display=swap');
+:root{
+    --a:0;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+body{
+    background-color: black;
+    color: white; 
+}
+
+.left{
+    width: 25vw;
+    padding: 10px;
+}
+.home{
+    
+}
+.right{
+    width: 75vw;
+}
+.home ul li{
+    width: 16px;
+    font-weight:bold ;
+    display: flex;
+    gap: 14px;
+    list-style: none;
+    padding-top: 16px;
+}
+.heading{
+    display: flex; 
+    gap: 15px;
+    width: 100%;
+    padding-top: 14px;
+    padding: 23px 14px;
+    font-weight:bold ;
+    align-items: center;
+    font-size: 12px;
+
+}
+.heading img{
+    width: 30px;
+}
+
+.library{
+    min-height:76vh; 
+    position: relative;
+
+
+}
+.footer{
+    display: flex;
+    font-size: 10px;
+    color: gray;
+    gap: 13px;
+    position: absolute;
+    bottom: 0;
+    padding: 34px 0;
+}
+.footer a{
+    color: gray;
+}
+.right{
+    margin: 16px 0;
+    position: relative;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(34, 34, 34);
+}
+.header>*{
+    padding: 16px;
+}
+.spotifyplaylists{
+    padding: 16px;
+}
+.spotifyplaylists h1{
+    padding: 16px;
+}
+
+.cardcontainer{
+    display: flex;
+    /* justify-content: center; */
+    gap: 9px;
+    margin: 9px;
+    flex-wrap: wrap;
+    overflow-y: auto;
+    max-height: 65vh;
+}
+
+
+.card{
+    width: 185px;
+    padding: 10px; 
+    border-radius:5px;
+    background-color: #252525; 
+    position: relative;
+    transition: all .7s;
+}
+.card:hover{
+    background-color: rgb(74, 74, 74);
+    cursor: pointer;
+    --a:1;
+}
+
+
+.card > *{
+    padding-top: 10px;
+}
+.card img{
+    width: 100%;
+    object-fit:contain;
+}
+.play{
+    width: 28px;
+    height: 28px;
+    background-color: #1fdf64;
+    border-radius: 50px;
+    border: 2px solid #000;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 168px;
+    right:17px;
+    opacity: var(--a);
+    transition: all 1s ease-out;
+
+}
+.signupbtn{
+    background-color: rgb(34, 34, 34);;
+    color:rgb(164, 159, 159);
+    font-weight: bold;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+.button>*{
+    margin: 0 12px;
+}
+
+.signupbtn:hover{
+    font-size: 17px;
+    color: rgb(255, 255, 255);
+
+}
+.loginbtn{
+    background-color: white;
+    border-radius: 21px;
+    color: black;
+    padding: 10px;
+    width: 79px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.loginbtn:hover{
+    font-weight: bold;
+    /* padding: 10px; */
+    font-size: 17px;
+    
+
+}
+
+
+.playbar img{
+    filter: invert(1);
+}
+.playbar{
+    position: fixed;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    /* filter: invert(1); */
+    bottom: 30px;
+    /* width: 90%; */
+    padding: 10px;
+    width: 70vw;
+    border-radius: 32px;
+    min-height: 35px;
+    border: 1px solid rgb(43, 43, 43);
+}
+
+.songbtn{
+    display: flex;
+    justify-content: center;
+    display: flex; 
+    gap: 16px;
+    background-color: #262626;
+    padding: 5px 30px;
+    border-radius: 20px;
+}
+
+.songList{
+    height: 544px;
+    overflow: auto;
+    margin-bottom: 44px;
+}
+.hamburger{
+    display: none;
+}
+.hamburgericon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+
+}
+.songbtn img{
+    height: 35px;
+}
+
+.songList ul{
+    padding: 0 12px;
+}
+
+/* songlist here */
+
+.songList ul li{
+    list-style-type:decimal;
+    display: flex;
+    justify-content: space-between;
+    gap: 48px;
+    cursor: pointer;
+    padding: 12px 0;
+    border: 1px solid white;
+    margin: 6px;
+    padding: 13px;
+    border-radius: 5px;
+}
+
+.songList .info{
+    /* font-size: 13px; */
+}
+.playbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.playnow span{
+    font-size: 12px;
+    width: 64px;
+    /* padding: 12px; */
+}
+.playnow img{
+    height: 30px;
+}
+
+.seekbar{
+    height:6px ;
+    width: 95%;
+    margin-inline: 15px;
+    cursor: pointer;
+    background: rgb(255, 255, 255);
+    position: absolute;
+    bottom: 8px;
+    left:0px;
+    /* margin: 6px; */
+    border-radius: 8px;
+    /* margin-left: 389px; */
+}
+.circle{
+    width: 13px;
+    height: 13px ;
+    border-radius: 13px;
+    background-color: white;
+    position: relative;
+    bottom: 5px;
+    left: 0%;
+    transition: left 0.5s;
+}
+.songbtn img{
+    cursor: pointer;
+}
+
+.songinfo .songtime{
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 12px;
+}
+
+
+.abovebar{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+
+@media (max-width: 1200px) {
+    .left {
+        position: absolute;
+        left: -110%;
+        transition: all .3s;
+        z-index: 1;
+        width: 433px;
+        /* /* background-color: black; */
+        padding: 0;
+        height: 100vh;
+        position: fixed;
+        top: 0; 
+    }
+}
+
+.left .close {
+    position: absolute;
+    right: 31px;
+    top: 25px;
+    width: 29px;
+} 
+
+.playbar{
+    width: calc(100vw- 70px);
+} 
+.player{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0px 130px;
+}
+.right{
+    /* width: 320vw; */
+}
+
+
+.hamburger{
+    display: block;
+} 
+
+.card{
+    /* width: 90vw; */
+}
+.cardcontainer{
+    margin: 0;
+    /* justify-content: center; */
+}
+
+.sch{
+    padding: 3px;
+    border-radius: 12px;
+}
+
+
+.sch::-webkit-input-placeholder {
+    text-align: center;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+}
+
+.sch:-moz-placeholder {
+    /* Firefox 18- */
+    text-align: center;
+}
+
+.sch::-moz-placeholder {
+    /* Firefox 19+ */
+    text-align: center;
+}
+
+.sch:-ms-input-placeholder {
+    text-align: center;
+}
+
+.plts{
+    padding: 10px;
+    border: none;
+    border-radius: 18px;
+    background-color: #3a3a3a;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    
+}
